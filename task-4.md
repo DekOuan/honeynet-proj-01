@@ -27,3 +27,25 @@
 "timestamp": "2025-03-29T10:01:00Z", "log_type": "auth", "client_ip": "192.168.1.10", "event": "new user: name=attacker, UID=1001, GID=1001"
 "timestamp": "2025-03-29T11:29:00Z", "log_type": "cron", "client_ip": "192.168.1.10", "event": "CRON executed reverse_shell.py"
 ```
+
+### Suspicious files
+- `malicious.sh` - Malicious script executed by the attackers
+assumed to be a download script from the attacker's C2 server
+```zsh
+"timestamp": "2025-03-29T10:00:00Z", "log_type": "cron", "client_ip": "192.168.1.10", "event": "CRON job started: wget malicious.sh"
+"timestamp": "2025-03-29T10:05:00Z", "log_type": "cron", "client_ip": "10.0.0.8", "event": "CRON job started: wget malicious.sh"
+"timestamp": "2025-03-29T11:18:00Z", "log_type": "cron", "client_ip": "203.0.113.5", "event": "CRON job started: wget malicious.sh"
+```
+
+- `reverse_shell.py` - Malicious script executed by the attackers
+```zsh
+"timestamp": "2025-03-29T10:02:00Z", "log_type": "cron", "client_ip": "203.0.113.5", "event": "CRON executed reverse_shell.py"
+"timestamp": "2025-03-29T10:15:00Z", "log_type": "cron", "client_ip": "10.0.0.8", "event": "CRON executed reverse_shell.py"
+"timestamp": "2025-03-29T11:37:00Z", "log_type": "cron", "client_ip": "192.168.1.11", "event": "CRON executed reverse_shell.py"
+```
+- `config.php` - contains the important information about the web application while the attacker trying to access it
+```zsh
+"timestamp": "2025-03-29T10:18:00Z", "log_type": "access", "client_ip": "192.168.1.11", "event": "GET /config.php HTTP/1.1 - 403"
+"timestamp": "2025-03-29T10:19:00Z", "log_type": "access", "client_ip": "192.168.1.10", "event": "GET /config.php HTTP/1.1 - 403"
+"timestamp": "2025-03-29T10:19:00Z", "log_type": "access", "client_ip": "203.0.113.5", "event": "GET /config.php HTTP/1.1 - 403"
+```
