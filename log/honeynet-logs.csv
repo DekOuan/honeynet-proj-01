@@ -1,0 +1,101 @@
+timestamp,log_type,client_ip,event
+2025-03-29T12:19:00Z,auth,192.168.1.11,Accepted password for root from 192.168.1.11 port 54321 ssh2
+2025-03-29T10:46:00Z,access,192.168.1.11,GET /config.php HTTP/1.1 - 403
+2025-03-29T12:13:00Z,cron,203.0.113.5,CRON job started: wget malicious.sh
+2025-03-29T12:38:00Z,cron,203.0.113.5,CRON executed reverse_shell.py
+2025-03-29T12:38:00Z,access,192.168.1.10,GET /admin HTTP/1.1 - 403
+2025-03-29T11:58:00Z,access,10.0.0.8,POST /login.php HTTP/1.1 - 200
+2025-03-29T10:19:00Z,access,192.168.1.10,GET /config.php HTTP/1.1 - 403
+2025-03-29T12:49:00Z,access,203.0.113.5,GET /admin HTTP/1.1 - 403
+2025-03-29T11:00:00Z,auth,10.0.0.8,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T10:41:00Z,auth,203.0.113.5,Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
+2025-03-29T10:35:00Z,access,203.0.113.5,POST /login.php HTTP/1.1 - 200
+2025-03-29T10:29:00Z,cron,203.0.113.5,CRON job added by attacker
+2025-03-29T10:59:00Z,access,192.168.1.11,GET /index.html HTTP/1.1 - 200
+2025-03-29T11:35:00Z,cron,192.168.1.10,CRON job added by attacker
+2025-03-29T10:20:00Z,access,10.0.0.8,GET /admin HTTP/1.1 - 403
+2025-03-29T11:45:00Z,cron,192.168.1.11,CRON job added by attacker
+2025-03-29T10:47:00Z,auth,203.0.113.5,Accepted password for root from 203.0.113.5 port 54321 ssh2
+2025-03-29T12:31:00Z,auth,203.0.113.5,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T11:32:00Z,auth,192.168.1.10,Failed password for invalid user admin from 192.168.1.10 port 45678 ssh2
+2025-03-29T10:18:00Z,access,192.168.1.11,GET /config.php HTTP/1.1 - 403
+2025-03-29T11:37:00Z,cron,192.168.1.11,CRON executed reverse_shell.py
+2025-03-29T10:01:00Z,auth,192.168.1.10,Failed password for invalid user admin from 192.168.1.10 port 45678 ssh2
+2025-03-29T12:47:00Z,cron,192.168.1.10,CRON job started: wget malicious.sh
+2025-03-29T10:00:00Z,cron,192.168.1.10,CRON job started: wget malicious.sh
+2025-03-29T11:06:00Z,auth,192.168.1.10,Accepted password for root from 192.168.1.10 port 54321 ssh2
+2025-03-29T12:10:00Z,cron,192.168.1.11,CRON job added by attacker
+2025-03-29T10:59:00Z,cron,10.0.0.8,CRON job started: wget malicious.sh
+2025-03-29T12:02:00Z,auth,192.168.1.11,Failed password for invalid user admin from 192.168.1.11 port 45678 ssh2
+2025-03-29T10:57:00Z,access,203.0.113.5,POST /login.php HTTP/1.1 - 200
+2025-03-29T10:24:00Z,auth,192.168.1.10,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T10:53:00Z,access,10.0.0.8,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T10:19:00Z,access,203.0.113.5,GET /config.php HTTP/1.1 - 403
+2025-03-29T11:42:00Z,access,203.0.113.5,GET /admin HTTP/1.1 - 403
+2025-03-29T10:02:00Z,cron,203.0.113.5,CRON executed reverse_shell.py
+2025-03-29T13:00:00Z,auth,192.168.1.10,Accepted password for root from 192.168.1.10 port 54321 ssh2
+2025-03-29T12:52:00Z,access,192.168.1.10,GET /config.php HTTP/1.1 - 403
+2025-03-29T10:14:00Z,cron,10.0.0.8,CRON job added by attacker
+2025-03-29T10:10:00Z,access,10.0.0.8,POST /login.php HTTP/1.1 - 200
+2025-03-29T10:34:00Z,cron,192.168.1.11,CRON executed reverse_shell.py
+2025-03-29T10:32:00Z,access,192.168.1.10,GET /index.html HTTP/1.1 - 200
+2025-03-29T12:11:00Z,access,192.168.1.10,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T11:34:00Z,cron,203.0.113.5,CRON job started: wget malicious.sh
+2025-03-29T11:50:00Z,auth,192.168.1.11,Failed password for invalid user admin from 192.168.1.11 port 45678 ssh2
+2025-03-29T10:15:00Z,cron,10.0.0.8,CRON executed reverse_shell.py
+2025-03-29T10:42:00Z,auth,203.0.113.5,Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
+2025-03-29T11:19:00Z,auth,192.168.1.11,Accepted password for root from 192.168.1.11 port 54321 ssh2
+2025-03-29T12:44:00Z,access,203.0.113.5,GET /admin HTTP/1.1 - 403
+2025-03-29T10:06:00Z,auth,192.168.1.11,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T10:58:00Z,auth,192.168.1.10,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T12:06:00Z,access,192.168.1.11,GET /admin HTTP/1.1 - 403
+2025-03-29T12:57:00Z,auth,192.168.1.10,Failed password for invalid user admin from 192.168.1.10 port 45678 ssh2
+2025-03-29T11:21:00Z,auth,10.0.0.8,Failed password for invalid user admin from 10.0.0.8 port 45678 ssh2
+2025-03-29T11:35:00Z,cron,10.0.0.8,CRON executed reverse_shell.py
+2025-03-29T12:30:00Z,auth,10.0.0.8,Failed password for invalid user admin from 10.0.0.8 port 45678 ssh2
+2025-03-29T10:02:00Z,cron,192.168.1.10,CRON job added by attacker
+2025-03-29T12:45:00Z,cron,10.0.0.8,CRON job added by attacker
+2025-03-29T13:00:00Z,access,192.168.1.10,GET /index.html HTTP/1.1 - 200
+2025-03-29T11:29:00Z,cron,192.168.1.10,CRON executed reverse_shell.py
+2025-03-29T12:20:00Z,auth,10.0.0.8,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T11:01:00Z,auth,192.168.1.11,Accepted password for root from 192.168.1.11 port 54321 ssh2
+2025-03-29T12:12:00Z,cron,10.0.0.8,CRON job added by attacker
+2025-03-29T11:23:00Z,auth,192.168.1.10,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T11:45:00Z,access,192.168.1.10,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T12:05:00Z,auth,203.0.113.5,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T12:24:00Z,access,192.168.1.11,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T10:42:00Z,cron,203.0.113.5,CRON job added by attacker
+2025-03-29T12:44:00Z,auth,10.0.0.8,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T12:08:00Z,access,10.0.0.8,POST /login.php HTTP/1.1 - 200
+2025-03-29T10:59:00Z,access,192.168.1.10,GET /admin HTTP/1.1 - 403
+2025-03-29T11:18:00Z,cron,203.0.113.5,CRON job started: wget malicious.sh
+2025-03-29T12:50:00Z,access,192.168.1.10,GET /admin HTTP/1.1 - 403
+2025-03-29T12:39:00Z,auth,192.168.1.10,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T10:37:00Z,cron,192.168.1.10,CRON job started: wget malicious.sh
+2025-03-29T11:33:00Z,cron,192.168.1.11,CRON job started: wget malicious.sh
+2025-03-29T11:09:00Z,auth,203.0.113.5,Accepted password for root from 203.0.113.5 port 54321 ssh2
+2025-03-29T12:24:00Z,auth,203.0.113.5,Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
+2025-03-29T10:05:00Z,cron,10.0.0.8,CRON job started: wget malicious.sh
+2025-03-29T10:27:00Z,cron,192.168.1.11,CRON job started: wget malicious.sh
+2025-03-29T12:23:00Z,access,203.0.113.5,GET /admin HTTP/1.1 - 403
+2025-03-29T12:44:00Z,access,192.168.1.10,POST /login.php HTTP/1.1 - 200
+2025-03-29T11:03:00Z,access,10.0.0.8,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T12:52:00Z,auth,192.168.1.10,Failed password for invalid user admin from 192.168.1.10 port 45678 ssh2
+2025-03-29T13:00:00Z,auth,192.168.1.11,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T10:48:00Z,access,192.168.1.11,GET /index.html HTTP/1.1 - 200
+2025-03-29T11:37:00Z,cron,192.168.1.11,CRON executed reverse_shell.py
+2025-03-29T10:57:00Z,auth,203.0.113.5,Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
+2025-03-29T10:01:00Z,auth,192.168.1.10,"new user: name=attacker, UID=1001, GID=1001"
+2025-03-29T11:11:00Z,auth,203.0.113.5,Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
+2025-03-29T12:45:00Z,cron,203.0.113.5,CRON executed reverse_shell.py
+2025-03-29T11:59:00Z,cron,203.0.113.5,CRON executed reverse_shell.py
+2025-03-29T10:04:00Z,access,192.168.1.11,GET /phpmyadmin/ HTTP/1.1 - 404
+2025-03-29T11:30:00Z,access,192.168.1.10,POST /login.php HTTP/1.1 - 200
+2025-03-29T12:57:00Z,access,192.168.1.10,GET /config.php HTTP/1.1 - 403
+2025-03-29T12:41:00Z,auth,203.0.113.5,Accepted password for root from 203.0.113.5 port 54321 ssh2
+2025-03-29T11:49:00Z,access,192.168.1.10,POST /login.php HTTP/1.1 - 200
+2025-03-29T11:49:00Z,access,10.0.0.8,GET /admin HTTP/1.1 - 403
+2025-03-29T10:22:00Z,cron,192.168.1.11,CRON job started: wget malicious.sh
+2025-03-29T12:57:00Z,cron,203.0.113.5,CRON job added by attacker
+2025-03-29T12:06:00Z,access,10.0.0.8,GET /index.html HTTP/1.1 - 200
+2025-03-29T10:24:00Z,auth,10.0.0.8,Failed password for invalid user admin from 10.0.0.8 port 45678 ssh2
