@@ -1,0 +1,3 @@
+Modified: /etc/passwd
+Added: /tmp/reverse_shell.py
+SHA256: d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2

@@ -1,0 +1,2 @@
+Mar 29 10:21:03 honeypot sshd[1234]: Accepted password for root from 192.168.1.11 port 54321 ssh2
+Mar 29 10:22:15 honeypot useradd[1235]: new user: name=attacker, UID=1001, GID=1001

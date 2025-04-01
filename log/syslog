@@ -1,0 +1,1 @@
+Mar 29 10:25:10 honeypot CRON[1236]: (attacker) CMD (/usr/bin/python3 /tmp/reverse_shell.py)
