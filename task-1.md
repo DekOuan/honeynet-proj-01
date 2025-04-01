@@ -13,6 +13,7 @@
 - *Testing default credentials*: Attempts to log in as "admin" user
 
 ### Vulnerabilities was exploited by weak credentials
+- At the start of the timestamp the attacker was already in the system as the `cron job` was already added and the `malicious script` was already downloaded
 - The attacker trying to brute force the password of the admin user
 ```zsh
 Failed password for invalid user admin from 203.0.113.5 port 45678 ssh2
