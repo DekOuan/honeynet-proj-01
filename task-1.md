@@ -1,5 +1,5 @@
 ### First timestamp activitiy  
-- The first timestamp activity is 29/Mar/2025:10:15:32 +0000 by trying to access `/admin` path
+- The first timestamp activity is 29/Mar/2025:10:00:00Z by starting a CRON job for downloading `malicious.sh`
 
 ### Attacker IP address
 - I find 203.0.113.5 is the actual public ip address of the attacker all others are private ip addresses
