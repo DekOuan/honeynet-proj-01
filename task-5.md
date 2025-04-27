@@ -60,3 +60,45 @@
 - Implement zero-trust architecture principles
 - Deploy internal firewalls between zones with explicit allow rules
 
+## Recommend Detective Measures
+
+1. Implement Real-time Authentication Monitoring and Alerts
+- Deploy a SIEM (e.g., Splunk, Wazuh, ELK Stack) to collect logs from authentication services
+- Set up real-time alerts for:
+  - Multiple failed login attempts
+  - New user creation or privilege escalation
+  - Suspicious logins from unusual IP addresses or locations
+
+2. Monitor Scheduled Tasks and CRON Jobs
+- Enable File Integrity Monitoring (FIM) on critical files:
+  - `/etc/cron.*`
+  - `/var/spool/cron/`
+  - `/etc/passwd` and `/etc/group`
+- Send FIM alerts to the SIEM when unauthorized CRON jobs or user changes are detected
+- Regularly review scheduled tasks manually during audits
+
+3. Implement Outbound Network Traffic Analysis
+- Monitor and log all outbound connections
+- Detect anomalous behavior, such as:
+  - Connections to unknown, foreign, or blacklisted IP addresses
+  - Unexpected ports (e.g., outbound SSH sessions, reverse shells)
+- Use Intrusion Detection Systems (IDS) such as Suricata or Zeek to capture suspicious outbound traffic patterns
+
+## Incident Response Steps
+1. **Identification and Containment**
+- Immediately isolate the affected server from the network
+- Identify ongoing attacker activity
+
+2. **Preserve Evidence**
+- Capture full disk and memory images before powering down
+- Record network connections, active processes, and user sessions
+
+3. **Eradication and Recovery**
+- Remove unauthorized users and malicious CRON jobs
+- Rebuild the server from a trusted clean image
+- Patch any vulnerabilities and reconfigure security settings
+
+4. **Post-Incident Actions**
+- Conduct a root cause analysis to understand how the compromise occurred
+- Update security measures and defenses
+- Report the incident according to regulatory requirements
